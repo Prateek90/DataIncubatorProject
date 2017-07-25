@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Flask Template</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/ResultScript.css">
+
+</head>
+
+<body>
+
+<div class="fixedContainer">
+
+    <div class="bg"></div>
+
+    <div class="topcorner"><a href="/templates/InitialPage.html">BACK</a></div>
+
+</div>
+            <ul>
+
+                {% set count = 1 %}
+
+                {% for row in user_list %}
+
+                    <div class="insideContainer">
+
+                        {{ 'User '}}{{  count }}{{ ' will review :'}} <br>
+
+                        {% for j in row %}
+
+                            {{ 'User ' }}{{ j }}{{ '   ' }}
+
+                        {% endfor %}
+
+                    </div><br>
+
+                    {% set count = count + 1 %}
+
+                {% endfor %}
+
+            </ul>
+
+</body>
+
+</html>

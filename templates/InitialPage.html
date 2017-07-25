@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Background Picture</title>
+
+    <script src="/static/javascript/FormValidationScript.js"></script>
+
+    <style>
+
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url('/static/background/dataIncubator.jpg');
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .layer{
+            background-color: rgba(248, 247, 216, 0.7);
+            position: relative;
+
+            top: 25%;
+            left: 30%;
+            width: 40%;
+            height: 40%;
+        }
+
+        .textBox{
+            width: 85%;
+            height:10%;
+            margin-top:5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            padding: 1%;
+            border-radius: 10px;
+        }
+
+        .button{
+            margin: auto;
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+<body >
+
+<div class="bg">
+
+    <div class = "layer">
+
+        <form name="myForm" action="/query"  method ="post">
+
+            <input class="textBox" type="text" id="users" name="Users" style="color:#888;" value="Enter Number of Users" onfocus="inputFocus(this)" onblur="inputBlur(this)" required><br>
+
+            <input class="textBox" type="text" id="reviewCount" name="ReviewCount" style="color:#888;" value="Enter Number of reviews per video" onfocus="inputFocus(this)" onblur="inputBlur(this)" required><br>
+
+            <input class="button" type="submit" value="Submit" align="center">
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
