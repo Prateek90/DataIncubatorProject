@@ -66,7 +66,7 @@
 
     <div class = "layer">
 
-        <form name="myForm" action="/query"  method ="post">
+        <form name="myForm" action="/query" onsubmit="return validateForm()" method ="post">
 
             <input class="textBox" type="text" id="users" name="Users" style="color:#888;" value="Enter Number of Users" onfocus="inputFocus(this)" onblur="inputBlur(this)" required><br>
 

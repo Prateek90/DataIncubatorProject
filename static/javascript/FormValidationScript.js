@@ -22,8 +22,6 @@ function validateForm() {
         alert("Reviews cannot be negative")
         return false;
     }else if(x.value <= y.value){
-        alert(x.value)
-        alert(y.value)
         alert("Users should be greater than reviews per video")
         return false;
     }
