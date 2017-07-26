@@ -25,4 +25,4 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 
 if __name__ == '__main__':
     app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
-    app.run()
+    app.run(debug=True)
