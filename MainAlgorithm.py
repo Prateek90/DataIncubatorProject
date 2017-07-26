@@ -5,6 +5,8 @@ import random
 def allocatedVideo(n,m):
     n=int(n)
     m=int(m)
+    if((n <= 0) or (m < 0) or (n<=m)):
+        return False;
 
     try:
         person = list(range(1,n+1))
