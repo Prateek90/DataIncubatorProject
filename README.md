@@ -15,13 +15,13 @@ The webapp could be run on localhost as well as on Heroku server
 
 LocalHost:
 - Running on localhost will require cloning of github repository using command
-  ### $ git clone https://github.com/Prateek90/DataIncubatorProject.git
+  ## $ git clone https://github.com/Prateek90/DataIncubatorProject.git
  
 - After cloning of the repository and installing all the requirements the app can be run by following the below steps:
     * Go to the directory where repository is cloned.
     * Give the following command to run the app
       ### $ gunicorn DataIncubatorAlgorithm:app
-    * After running the above command the app can be accessed via web browser at ### http://127.0.0.1:8000
+    * After running the above command the app can be accessed via web browser at http://127.0.0.1:8000
 
 HerokuServer:
 - The app is deployed on the heroku server and it can be accessed by following this link : https://uservideoallocationapp.herokuapp.com/
@@ -47,14 +47,14 @@ The app assigns m videos to usersfor review randomly. The process of allocation 
 
 Following are the design decisions that were taken for webapp development
 
-Framework: Python Flask
+Framework: Python Flask, 
 Why?
 * It is easy to use light weight Framework
 * It is extensively documented
 * It has its own development server and debugger
 * Flask uses Jinja 2 templating
 
-Hosting Server: Heroku
+Hosting Server: Heroku, 
 Why?
 * It is really easy to deploy on Heroku server
 * It is easy to scale
