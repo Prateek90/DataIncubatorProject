@@ -28,7 +28,7 @@ HerokuServer:
 
 ## Algorithm for video assignment
 
-The app assigns m videos to usersfor review randomly. The process of allocation could be defined as follows:
+The app assigns m videos to users for review randomly. The process of allocation could be defined as follows:
   * The process starts by creating list of m videos for n users, this is acheived in the following way:
     -A number is selected between 1 to n randomly
     -After selection of number m continuous numbers are taken n times in cyclic order thus creating a list of size n with m videos in each list
@@ -36,12 +36,9 @@ The app assigns m videos to usersfor review randomly. The process of allocation 
     This is acheived in the following way:
       - A user from n users is selected randomly such that all the requirements are satisfied, and that user is allocated a list of videos to review
       - Above process continues n-m times and at the end we will be left with m+1 users and m+1 reviews
-      - For assigning these m+1 users with m+1 reviews we use 2 data structures one is stack and other one is queue.
-      - All m+1 users aare put into queue, users are selected one by one from queue and whoever satisfies the requirement is removed from queue and pushed into stack, a list of videos to review is allocated to that user.
-      - If the queue is not empty and requirements are not satisfied for any user from the queue the a user is 
-        popped from the stack and the list of videos allocated to that user is again unallocated and user is put back into the queue.
-      - The above process continues until the queue becomes empty thereby allocating list of videos to review to each user.
-  
+      - For assigning these m+1 users with m+1 reviews we use the process of recursion.
+      - The recursion algorithm base case checks if number of reviews=0, this case suggests that every user is allocated list of videos to review.
+      - If every user is not allocated video to review then a user is selected from the list of remaining users for allotment, this user is first checked that it complies with the requirement, if so video is allocated to this user, if not then other user from the list is selected that complies with requirements and this process continues until allotment to user is completed.
 
 ## Design Decisions
 
@@ -63,4 +60,5 @@ Why?
 ## Tradeoffs
 
 ### Memory Usage and Processing:
-As the users or reviews goes on increasing, considering our limited resources like memory and processing power the time to allocate videos to users also increases. In the algorithm that has been implemented the allocation is first stored in the list of list and the last m+1 allocation require stack as well as queue for there allocation, for smaller numbers of m it works really well but as the number of reviews per video increases the process starts to consume more memory and also more processing power making the process slower, the efficiency of this process can be increased by making use of distributed computing.
+
+Since we have limited resources there is a tradeoff of memory and processing power, as the number of user and reviews per video increases the process starts to consume more memory and processing power. We have employed the process of recurison and as the number of reviews per video  increases recursion starts to consume more memory and processing power, but this won't be a problemif number of reviews are taken in a nominal range.
