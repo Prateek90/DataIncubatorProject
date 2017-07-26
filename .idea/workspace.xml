@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22a83802-73d4-4c8a-a94e-c027177973a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainAlgorithm.py" afterPath="$PROJECT_DIR$/MainAlgorithm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/InitialPage.html" afterPath="$PROJECT_DIR$/templates/InitialPage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Result.html" afterPath="$PROJECT_DIR$/templates/Result.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,17 +14,17 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/DataIncubatorAlgorithm$TestingModule.coverage" NAME="TestingModule Coverage Results" MODIFIED="1500922891050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DataIncubatorAlgorithm$MainAlgorithm.coverage" NAME="MainAlgorithm Coverage Results" MODIFIED="1501093395506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataIncubatorAlgorithm$MainAlgorithm.coverage" NAME="MainAlgorithm Coverage Results" MODIFIED="1501094051368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataIncubatorAlgorithm$trial.coverage" NAME="trial Coverage Results" MODIFIED="1500940837204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataIncubatorAlgorithm$DataIncubatorAlgorithm.coverage" NAME="DataIncubatorAlgorithm Coverage Results" MODIFIED="1501092065053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataIncubatorAlgorithm.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataIncubatorAlgorithm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataIncubatorAlgorithm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="143">
               <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -45,8 +46,8 @@
       <file leaf-file-name="InitialPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/InitialPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -55,7 +56,7 @@
       <file leaf-file-name="ResultScript.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/ResultScript.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
+            <state relative-caret-position="18">
               <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding />
             </state>
@@ -65,8 +66,8 @@
       <file leaf-file-name="Result.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -82,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainAlgorithm.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainAlgorithm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainAlgorithm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="71">
               <caret line="97" column="92" lean-forward="false" selection-start-line="97" selection-start-column="92" selection-end-line="97" selection-end-column="92" />
               <folding />
             </state>
@@ -123,11 +124,11 @@
         <option value="$PROJECT_DIR$/static/css/ResultScript.css" />
         <option value="$PROJECT_DIR$/static/css/initialPageScript.css" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/templates/Result.html" />
         <option value="$PROJECT_DIR$/DataIncubatorAlgorithm.py" />
         <option value="$PROJECT_DIR$/static/javascript/FormValidationScript.js" />
-        <option value="$PROJECT_DIR$/templates/InitialPage.html" />
         <option value="$PROJECT_DIR$/MainAlgorithm.py" />
+        <option value="$PROJECT_DIR$/templates/InitialPage.html" />
+        <option value="$PROJECT_DIR$/templates/Result.html" />
       </list>
     </option>
   </component>
@@ -831,32 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/ResultScript.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataIncubatorAlgorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/javascript/FormValidationScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -865,19 +840,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/ResultScript.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/InitialPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainAlgorithm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
+        <state relative-caret-position="71">
           <caret line="97" column="92" lean-forward="false" selection-start-line="97" selection-start-column="92" selection-end-line="97" selection-end-column="92" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataIncubatorAlgorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
