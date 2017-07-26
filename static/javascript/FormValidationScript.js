@@ -7,7 +7,7 @@ function inputBlur(i){
 }
 
 function validateForm() {
-    var x = document.getElementById("users");
+    var x = document.getElementById("users") ;
     var y = document.getElementById("reviewCount");
     if (x.value == "") {
         alert("Users cannot be empty");
