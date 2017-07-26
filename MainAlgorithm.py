@@ -63,53 +63,47 @@ def initialAllotment(person,review,alloted_list,m,n):
         tempList=[]
 
     # Function to allot m+1 videos to m+1 user
-    finalAllotment(person, review, alloted_list)
+    recursionAllotment(person, review, alloted_list)
 
     return alloted_list
 
-# This function allots m+1 videos to m+1 users
-def finalAllotment(person,reviews,allocated_list):
 
-    # Flag dtermines if any user in the list satisfies the condition or not
-    flag = False
-    stack=[]
+# Recursive function to allot videos to m+1 users
+def recursionAllotment(person, reviews, allocated_list):
 
-    # This loop allots videos to users until every user has been alloted a video
-    while person!=[]:
+    # Base Condition when every user has been alloted videos to review
+    if(len(reviews)==0):
+        return True
 
-        # Person acts as queue
-        for i in person:
+    # newList to ensure requirements are met
+    newList = [x for x in person if x not in reviews[0]]
 
-            # If condition checks for requirements that should be met
-            if i not in reviews[0]:
+    # If newList = [] , it means there are no users in person that will meet the requirement
+    if newList== []:
+        return False
 
-                # If a user is meeting requirement thenflag is set to True
-                flag=True
+    # randomly selecting a user from newList for video allotment
+    index1 = random.choice(newList)
 
-                # Person is allocated a video
-                allocated_list[i-1] = reviews[0]
+    # Loop to assign videos to review to selected user
+    for i in range(len(newList)):
 
-                # That person is removed from the queue
-                person.remove(i)
+        allocated_list[index1-1] = reviews[0]
 
-                # That review is also removed from reviews
-                reviews.remove(reviews[0])
+        # This step calls the function recursively by giving parameters with previously
+        # alloted user and video removed along with current allotment list
+        if(recursionAllotment([x for x in person if x not in [index1]], reviews[1:], allocated_list)):
+            return True
 
-                # That person is then pushed to the stack
-                stack.insert(0,i)
+        # If recursive function returns false that means the current allotment was not valid
+        else:
+            allocated_list[index1-1]=[]
+            index1 = newList[(newList.index(index1)+1)% len(newList)]
 
-                # Inner loop is then broken
-                break
 
-        # Flag == False indicates that there are no users in the queue that satisfies the condition
-        if (flag == False):
+    return False
 
-            # Stack is popped and user and alloted list of videos to review is added to
-            # the queue and list of reviews respectively
-            ele = stack.pop(0)
-            person.append(ele)
-            reviews.append(allocated_list[ele-1])
-            allocated_list[ele-1]=[]
 
-        # Flag is set to False after every inner loop
-        flag = False
+
+
+
