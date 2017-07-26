@@ -61,4 +61,7 @@ Why?
 
 ### Memory Usage and Processing:
 
-Since we have limited resources there is a tradeoff of memory and processing power, as the number of user and reviews per video increases the process starts to consume more memory and processing power. We have employed the process of recurison and as the number of reviews per video  increases recursion starts to consume more memory and processing power, but this won't be a problemif number of reviews are taken in a nominal range.
+Since we have limited resources there is a tradeoff of memory and processing power, as the number of user and reviews per video increases the process starts to consume more memory and processing power. We have employed the process of recurison and as the number of reviews per video  increases recursion starts to consume more memory and processing power, but this won't be a problem if number of reviews are taken in a nominal range.
+
+## Warning : 
+As we have limited processing power and timeout of application on heroku is 30 sec,if very high value of users/number of videos is given, the process will work perfectly on local but on heroku timeout occurs as process takes more than 30 sec
