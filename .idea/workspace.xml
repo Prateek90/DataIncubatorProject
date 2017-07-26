@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22a83802-73d4-4c8a-a94e-c027177973a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/javascript/FormValidationScript.js" afterPath="$PROJECT_DIR$/static/javascript/FormValidationScript.js" />
-    </list>
+    <list default="true" id="22a83802-73d4-4c8a-a94e-c027177973a5" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
