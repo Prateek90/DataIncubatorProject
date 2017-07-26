@@ -17,6 +17,8 @@ def query():
     users = request.form['Users']
     reviewCount = request.form['ReviewCount']
     videoAllocation = allocatedVideo(n=users, m=reviewCount)
+    if videoAllocation == False:
+        return render_template('InitialPage.html')
     return render_template("Result.html", user_list=videoAllocation)
 
 app.wsgi_app = ProxyFix(app.wsgi_app)

@@ -3,26 +3,33 @@ import random
 def allocatedVideo(n,m):
     n=int(n)
     m=int(m)
-    person = list(range(1,n+1))
 
-    review = [[]] * n
+    try:
+        person = list(range(1,n+1))
 
-    ele = random.randint(1, n)
+        review = [[]] * n
 
-    newList = []
-    alloted_list = [[]] * n
+        ele = random.randint(1, n)
 
-    for i in range(n):
-
-        for j in range(m):
-            ele = (ele % n) + 1
-            newList.append(ele)
-        review[i] = newList
         newList = []
+        alloted_list = [[]] * n
 
-    beforeRecursion(person,review,alloted_list,m,n)
+        for i in range(n):
 
-    return alloted_list
+            for j in range(m):
+                ele = (ele % n) + 1
+                newList.append(ele)
+            review[i] = newList
+            newList = []
+
+        beforeRecursion(person,review,alloted_list,m,n)
+
+        return alloted_list
+
+    except MemoryError:
+        return False
+
+
 
 def beforeRecursion(person,review,alloted_list,m,n):
 
