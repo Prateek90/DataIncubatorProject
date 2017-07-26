@@ -39,7 +39,7 @@ def allocatedVideo(n,m):
         return False
 
 
-# This function n-m users videos to review
+# This function allocates n-m users video to review
 def initialAllotment(person,review,alloted_list,m,n):
 
     # Loop for assigning n-m users with videos to review
